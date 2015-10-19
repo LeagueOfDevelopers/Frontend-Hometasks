@@ -13,7 +13,6 @@ function filter(arr, func) {
 };
 
 function inBetween(a, b) {
-	var flag = false;
 	return function(item) {
 		return ((a < item)&&(item < b));
 	} 
@@ -42,6 +41,6 @@ function sumOf(arr) {
 		return sum;
 	}
 }
-console.log(filter(arr, inBetween(3, 6)))
+console.log(filter(arr, inBetween(3, 6)));
 console.log(filter(arr, inArray([2, 4, 12, 6])));
 console.log(sumOf(arr));

@@ -1,5 +1,20 @@
 function makeBuffer() {
     // your code goes here
+	var string  = "";
+	
+	function buffer(value){
+		if(value!=null){
+			string+=value;
+		} else {
+			return string;
+		}	
+	};
+	
+	buffer.clear = function(){
+		string = "";
+	}
+	
+	return buffer;
 }
 
 var buffer = makeBuffer();
